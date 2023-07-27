@@ -5,6 +5,10 @@ from dotenv import load_dotenv
 from streamlit.web import cli as stcli
 from utils.process import process
 
+os.environ["OPENAI_API_KEY"] = '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'
+os.environ ["ACTIVELOOP_USERNAME"] ='shiyutang'
+os.environ ["ACTIVELOOP_TOKEN"] ='eyJhbGciOiJIUzUxMiIsImlhdCI6MTY5MDE2Nzk4MiwiZXhwIjoxNzIxNzkwMzAwfQ.eyJpZCI6InNoaXl1dGFuZyJ9.OW67VVUzR_0Vhk2qhp1pgF0gD4R_mjtTfqJaVz28i-K8p__6vINDWPoWkxjSqRkHL4w61Z-dQv3csIvvgJEa1Q'
+
 # Load environment variables from a .env file (containing OPENAI_API_KEY)
 load_dotenv()
 
@@ -57,7 +61,7 @@ def chat(args):
     ]
 
     sys.exit(stcli.main())
-
+    
 
 def main():
     """Define and parse CLI arguments, then execute the appropriate subcommand."""

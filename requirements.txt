@@ -5,4 +5,4 @@ pathspec
 python-dotenv
 streamlit
 streamlit_chat
-tiktoken
+# tiktoken

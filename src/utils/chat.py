@@ -36,6 +36,7 @@ def run_chat_app(activeloop_dataset_path):
 
     # Get the user's input from the text input field
     user_input = get_text()
+    print(f"{user_input}")
 
     # If there is user input, search for a response using the search_db function
     if user_input:
@@ -55,6 +56,7 @@ def generate_response(prompt):
     """
     Generate a response using OpenAI's ChatCompletion API and the specified prompt.
     """
+    print('!!!Using generate_response')
     completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo", messages=[{"role": "user", "content": prompt}]
     )
